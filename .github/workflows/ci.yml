@@ -18,7 +18,7 @@ jobs:
       run: |
         sudo apt-get update
         sudo apt-get install -y g++
-- name: Print compiler version
+    - name: Print compiler version
       run: g++ --version
 
     - name: Create build directory
