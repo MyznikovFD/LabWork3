@@ -29,8 +29,8 @@ private:
     size_t size_;
 
 public:
-    class iterator;
-    class const_iterator;
+    class iterator;        // Functionality of the classes will
+    class const_iterator;  //be used earler than it described
 
     /**
      * @brief Default constructor
@@ -85,14 +85,12 @@ public:
      * @return Reference to this list
      */
     CyclicList& operator=(const CyclicList& other) {
-        if (this != &other) {
-            clear();
-            for (const auto& item : other) {
-                push_back(item);
-            }
-        }
-        return *this;
+    if (this != &other) {
+        CyclicList temp(other);
+        swap(temp);
     }
+    return *this;
+}
 
     /**
      * @brief Move assignment operator
