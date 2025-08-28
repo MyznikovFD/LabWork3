@@ -1,0 +1,30 @@
+name: CI/CD for CyclicList Project
+
+on:
+  push:
+    branches: [ workBranch ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up GCC
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y g++
+- name: Print compiler version
+      run: g++ --version
+
+    - name: Create build directory
+      run: mkdir -p build
+
+    - name: Build project
+      run: |
+        make
+        make clean
