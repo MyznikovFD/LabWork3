@@ -1,0 +1,46 @@
+name: CI/CD for CyclicList Project
+
+on:
+  push:
+    branches: [workBranch]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up GCC
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y g++ libgtest-dev cmake
+    - name: Print compiler version
+      run: g++ --version
+
+    - name: Build Google Test
+      run: |
+        cd /usr/src/gtest
+        sudo cmake CMakeLists.txt
+        sudo make
+        sudo cp lib/*.a /usr/lib
+
+    - name: Create build and bin directories
+      run: |
+        mkdir -p build
+        mkdir -p bin
+
+    - name: Build project
+      run: |
+        make test
+
+    - name: Run tests
+      run: |
+        ./bin/cyclicListTest
+
+    - name: Clean up
+      run: |
+        make clean
