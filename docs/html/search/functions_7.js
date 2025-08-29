@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['pop_5fback_61',['pop_back',['../classCyclicList.html#a6a48941804497b7b12d89291dd20490a',1,'CyclicList']]],
-  ['pop_5ffront_62',['pop_front',['../classCyclicList.html#ac0e3561c597396ea1e34dbdb87f35ba8',1,'CyclicList']]],
-  ['push_5fback_63',['push_back',['../classCyclicList.html#a0f59c80809324e8842dcbf2c1e16f912',1,'CyclicList']]],
-  ['push_5ffront_64',['push_front',['../classCyclicList.html#a37d57fa4f39e63c16975c3b691bf690c',1,'CyclicList']]]
+  ['size_61',['size',['../classCyclicList.html#a7b5c5fbe1894517a0fc571adbec3798d',1,'CyclicList']]],
+  ['swap_62',['swap',['../classCyclicList.html#ae5aafe23fe54707c1fa604bc3ca3bfad',1,'CyclicList::swap()'],['../CyclicList_8hpp.html#ac870bb2e57083a7d6a9a0ec3651bdd54',1,'swap():&#160;CyclicList.hpp']]]
 ];

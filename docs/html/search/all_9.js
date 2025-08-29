@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['reference_30',['reference',['../classCyclicList_1_1iterator.html#ad6f9f87a83ac4b1a3aae53e87c4e2f88',1,'CyclicList::iterator::reference()'],['../classCyclicList_1_1const__iterator.html#af03d0c93ec45687961c296cdc671cda9',1,'CyclicList::const_iterator::reference()']]]
+  ['size_29',['size',['../classCyclicList.html#a7b5c5fbe1894517a0fc571adbec3798d',1,'CyclicList']]],
+  ['swap_30',['swap',['../classCyclicList.html#ae5aafe23fe54707c1fa604bc3ca3bfad',1,'CyclicList::swap()'],['../CyclicList_8hpp.html#ac870bb2e57083a7d6a9a0ec3651bdd54',1,'swap():&#160;CyclicList.hpp']]]
 ];
